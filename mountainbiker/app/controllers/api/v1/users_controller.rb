@@ -34,4 +34,11 @@ class Api::V1::UsersController < ApplicationController
 			render json: {errors: "User not found!"}
 		end
 	end
+
+	def destroy
+    @user = User.find(params[:id])
+    @user.delete
+    render json: @user
+  end
+
 end

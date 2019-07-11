@@ -4,7 +4,7 @@ class Api::V1::AdventuresController < ApplicationController
 
   def index
     @adventures = Adventure.all
-    puts @adventures.to_json
+    # puts @adventures.to_json
     render json: @adventures
   end
 
@@ -15,9 +15,12 @@ class Api::V1::AdventuresController < ApplicationController
 
   def create
     @adventure = Adventure.new(adventure_params)
-    if @adventure.save
+    @user = User.find(@adventure.user_id)
+    if @user.adventures.select{|adventure| adventure.path_id == @adventure.path_id}.length == 0
+      @adventure.save
       render json: @adventure
     end
+  end
 
   def destroy
     @adventure.delete
@@ -35,5 +38,3 @@ class Api::V1::AdventuresController < ApplicationController
   def find_adventure
     @adventure = Adventure.find(params[:id])
   end
-
-end
