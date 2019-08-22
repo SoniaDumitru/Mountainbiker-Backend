@@ -35,6 +35,21 @@ class Api::V1::UsersController < ApplicationController
 		end
 	end
 
+	def update
+		@user = User.find(params[:id])
+		@user.update(
+			name: params[:name],
+			image: params[:image],
+			email: params[:email],
+			location: params[:location]
+		)
+		if @user.save
+			render json: @user
+		else
+			render json: {error: "Please enter valid information"}
+		end
+	end
+
 	def destroy
     @user = User.find(params[:id])
     @user.delete
