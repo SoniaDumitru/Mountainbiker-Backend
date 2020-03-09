@@ -4,8 +4,8 @@ Final Project Flatiron School
 # Demo 
 
 https://mountain-biker.herokuapp.com/home
-Login Username: sonia@gmail.com
-Password: sonia
+- Login -> Username: sonia@gmail.com
+-> Password: sonia
 
 * Home Page: 
 
