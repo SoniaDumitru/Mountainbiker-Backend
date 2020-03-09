@@ -38,12 +38,14 @@ https://mountain-biker.herokuapp.com/home
 # Instalation:
 Have Ruby, Rails and Node.js installed.
 
-- Fork and clone this backend repo
+- Fork and clone this backend repo along with the frontend repo
 - From the root directory:
 * Run $ bundle install
 * Run $ rake db:migrate
-- cd into the mountainbiker directory
-* Run $ npm install and then run $ rails start
+* Run $ rails start
+- cd into the mountainbiker-client directory
+* Run $ npm install
+* Run $ npm start
 
 # Technologies and Resources
 
