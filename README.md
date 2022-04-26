@@ -1,22 +1,23 @@
 # The App - Mountainbiker
 
-Platform connecting mountainbikers with trails, where they can search trails by name and by locationcan add them to their favorite adventures. Users can post opinions about favorite trails and see all details including Google Maps location. 
+Mountaibiker is an app that connects mountainbikers with trails. A user can easily search trails by name or by location, once results are populated there is an option to add trails to favorite adventures. A user can also post opinions and impressions about trails and dive deeper into all trail details including Google Maps location. 
+
 Built with RESTful API architecture and CRUD functionalities.
 
 ## Motivations
-Build a fullstack app that uses Ruby for the backend with PostgreSQL and React for the frontend.
+My motivation was to build a fullstack app that uses Ruby on Rails for the backend with PostgreSQL as database management system and JS with React for the frontend.
 
 ## Demo 
 <a href="https://mountain-biker.herokuapp.com/home">Here!</a>
 
 ## Technical details and Resources
-- Front-end built with React and React Router.
+- Front-end built with JS React and React Router.
 - Styling with pure CSS and Semantic UI.
-- PostgreSQL database.
+- PostgreSQL database management system.
 - Authentication with JWT.
-- Developed a Ruby on Rails API backend with 4 different endpoints: for users, paths, comments and adventures.
-- Used serializer to format the JSON file.
-- APIs: The Mountainbike Project Data API and Google Maps API
+- Developed a Ruby on Rails API backend with several endpoints - examples: /users, /paths, /comments, /adventures.
+- Used serializer to format the JSON files.
+- Used external APIs: The Mountainbike Project Data API and Google Maps API
 
 ## Installation
 - Fork and clone the project frontend: https://github.com/SoniaDumitru/Mountainbiker-Frontend 
